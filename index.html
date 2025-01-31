@@ -41,38 +41,114 @@
     <!-- Java Script -->
 
     <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-              }
-            }
-          }
-        }
-      </script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              "sec-color": "#FFF9F4",
+              "pry-color": "#FFDC26",
+            },
+          },
+        },
+      };
+    </script>
 
+    <!-- FontAswaom -->
+    <script
+      src="https://kit.fontawesome.com/251e4f3b7a.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
 
-
   <body>
-
     <!-- header -->
-     <header>
-        
-     </header>
+    <header class="">
+      <!-- nav bar -->
+      <nav class="bg-sec-color font-sora">
+        <div class="container mx-auto">
+          <div class="navbar">
+            <div class="navbar-start lg:hidden">
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 6h16M4 12h8m-8 6h16"
+                    />
+                  </svg>
+                </div>
+                <ul
+                  tabindex="0"
+                  class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+                >
+                  <li><a>Find a pet</a></li>
+                  <li><a>Breeds</a></li>
+                  <li><a>Contact us</a></li>
+                </ul>
+              </div>
+            </div>
 
-     <!-- main   -->
+            <div class="navbar-end lg:hidden">
+              <div class="flex justify-center items-center gap-2">
+                <div>
+                  <img src="c1-assets/logo-header.png" alt="" />
+                </div>
+              </div>
+            </div>
 
-     <main>
+            <div class="navbar-start hidden lg:flex">
+              <div class="flex justify-center items-center gap-2">
+                <div>
+                  <img src="c1-assets/logo-header.png" alt="" />
+                </div>
+                <div>
+                  <a class="text-2xl"
+                    >Browse <span class="text-yellow-400">4</span>Pets</a
+                  >
+                </div>
+              </div>
+            </div>
 
-     </main>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1 text-xl">
+                <li><a>Find a pet</a></li>
+                <li><a>Breeds</a></li>
+                <li><a>Contact us</a></li>
+              </ul>
+            </div>
 
-     <!-- footer -->
+            <div class="navbar-end hidden lg:flex gap-3">
+              <i class="fa-regular fa-bell text-2xl"></i>
+              <i class="fa-solid fa-magnifying-glass text-2xl"></i>
+              <a class="btn border-pry-color bg-transparent">Login</a>
+              <a class="btn bg-pry-color">Register</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
 
-     <footer>
+    <!-- main   -->
 
-     </footer>
+    <main>
+        <!-- Hero Section -->
+        <section>
 
+        </section>
+
+    </main>
+
+    <!-- footer -->
+
+    <footer></footer>
   </body>
 </html>
